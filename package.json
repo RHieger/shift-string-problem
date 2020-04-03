@@ -1,0 +1,19 @@
+{
+  "name": "shift-string-problem",
+  "version": "1.0.0",
+  "description": "Shift each component letter of string to one character ahead",
+  "main": "shift-string.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yes"
+  },
+  "keywords": [
+    "JavaScript",
+    "Node.js"
+  ],
+  "author": "Robert Hieger",
+  "license": "ISC"
+}
