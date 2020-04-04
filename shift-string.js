@@ -26,9 +26,26 @@
  // this script as intended.
 
  // URL for Node.js: https://nodejs.org/en/
+ 
 
  let shiftString = (string) => {
 
-    
+    // TO DO
 
  };
+
+ // FIRST TEST CODE:
+
+ const exampleOne = String('Bobby');
+
+ console.log(
+     `const exampleOne = ${exampleOne}\n`
+ );
+ 
+ for (let index = 0; index < exampleOne.length; index++)  {
+ 
+    console.log('The character code at exampleOne[' + index + '] is ' + exampleOne.charCodeAt(index));
+
+ }  // end for
+
+console.log();
