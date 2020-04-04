@@ -8,6 +8,7 @@
  *  
 */
 
+
 /**
  * 
  * PROBLEM AS STATED BY LANDON SCHROPP:
@@ -26,25 +27,10 @@
  // this script as intended.
 
  // URL for Node.js: https://nodejs.org/en/
-// FIRST TEST CODE:
 
-const exampleOne = String('Bobby');
+const shiftString = (string) => {
 
-console.log(
-    `const exampleOne = ${exampleOne}\n`
-);
-
-for (let index = 0; index < exampleOne.length; index++)  {
-
-   console.log('The character code at exampleOne[' + index + '] is ' + exampleOne.charCodeAt(index));
-
-}  // end for
-
-console.log();
-
-// FIRST ATTEMP SHIFTING CHARACTERS OF STRING:
-
- let shiftString = (string) => {
+    let shiftedString = '';
 
     for (let index = 0; index < string.length; index++)  {
 
@@ -52,10 +38,38 @@ console.log();
 
         let shiftedChar = string.charCodeAt(index) + 1;
 
-        console.log(shiftedChar);
+        shiftedString += String.fromCharCode(shiftedChar);
 
-    }
+    }  // end for
 
- };
+    console.log('Shifted String: ', shiftedString, '\n');
 
- shiftString(exampleOne);
+ }; // end shiftString()
+
+ // IMPORTANT: shiftString() is not suitable for strings that contain carriage returns or spaces
+ // because the algorithm does not take into account what their shifted values are. 
+
+ console.log('\nshiftString() DEMO:');
+ console.log('==================\n');
+
+ // Example 1:
+ 
+ const myName = 'Bobby';
+
+ console.log('\nEXAMPLE 1: myName');
+ console.log('-----------------\n');
+ console.log(`Original String: ${myName}\n`);
+
+ shiftString(myName);
+
+ // Example 2:
+
+ const curiosity = 'Curiosity';
+
+console.log('\nEXAMPLE 2: curiosity');
+console.log('--------------------\n');
+console.log(`Original String: ${curiosity}\n`);
+
+shiftString(curiosity);
+
+console.log();
