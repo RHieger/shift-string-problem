@@ -4,7 +4,8 @@
   "description": "Shift each component letter of string to one character ahead",
   "main": "shift-string.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node shift-string.js"
   },
   "repository": {
     "type": "git",
