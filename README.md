@@ -16,4 +16,7 @@ prerequisite is satisfied, simply type the following command in your terminal wi
 
 `npm start`
 
+**NOTE:** the shiftString function is not suitable for strings that contain spaces or carriage returns
+as the algorithm does not take into account the shifted value of these characters.
+
 For further documentation, consult the [wiki](https://github.com/RHieger/shift-string-problem/wiki).
