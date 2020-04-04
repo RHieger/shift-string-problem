@@ -26,26 +26,36 @@
  // this script as intended.
 
  // URL for Node.js: https://nodejs.org/en/
- 
+// FIRST TEST CODE:
+
+const exampleOne = String('Bobby');
+
+console.log(
+    `const exampleOne = ${exampleOne}\n`
+);
+
+for (let index = 0; index < exampleOne.length; index++)  {
+
+   console.log('The character code at exampleOne[' + index + '] is ' + exampleOne.charCodeAt(index));
+
+}  // end for
+
+console.log();
+
+// FIRST ATTEMP SHIFTING CHARACTERS OF STRING:
 
  let shiftString = (string) => {
 
-    // TO DO
+    for (let index = 0; index < string.length; index++)  {
+
+        // Increment each character code by 1:
+
+        let shiftedChar = string.charCodeAt(index) + 1;
+
+        console.log(shiftedChar);
+
+    }
 
  };
 
- // FIRST TEST CODE:
-
- const exampleOne = String('Bobby');
-
- console.log(
-     `const exampleOne = ${exampleOne}\n`
- );
- 
- for (let index = 0; index < exampleOne.length; index++)  {
- 
-    console.log('The character code at exampleOne[' + index + '] is ' + exampleOne.charCodeAt(index));
-
- }  // end for
-
-console.log();
+ shiftString(exampleOne);
