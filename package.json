@@ -16,5 +16,8 @@
     "Node.js"
   ],
   "author": "Robert Hieger",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^25.2.7"
+  }
 }
